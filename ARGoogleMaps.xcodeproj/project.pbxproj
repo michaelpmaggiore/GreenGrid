@@ -14,9 +14,11 @@
 		331854232B866BCF009D6ECE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 331854212B866BCF009D6ECE /* Main.storyboard */; };
 		331854252B866BD0009D6ECE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 331854242B866BD0009D6ECE /* Assets.xcassets */; };
 		331854282B866BD0009D6ECE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 331854262B866BD0009D6ECE /* LaunchScreen.storyboard */; };
+		6C0B848E6DEC7A8B22F99A72 /* Pods_ARGoogleMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E7DE846E0B9A6D65079CD22 /* Pods_ARGoogleMaps.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2323B5581DA131B4BDD9542F /* Pods-ARGoogleMaps.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARGoogleMaps.release.xcconfig"; path = "Target Support Files/Pods-ARGoogleMaps/Pods-ARGoogleMaps.release.xcconfig"; sourceTree = "<group>"; };
 		331854152B866BCF009D6ECE /* ARGoogleMaps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARGoogleMaps.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		331854182B866BCF009D6ECE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3318541A2B866BCF009D6ECE /* Shaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Shaders.metal; sourceTree = "<group>"; };
@@ -27,6 +29,8 @@
 		331854242B866BD0009D6ECE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		331854272B866BD0009D6ECE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		331854292B866BD0009D6ECE /* ARGoogleMaps-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ARGoogleMaps-Bridging-Header.h"; sourceTree = "<group>"; };
+		8E7DE846E0B9A6D65079CD22 /* Pods_ARGoogleMaps.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ARGoogleMaps.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2C11B70C38E1CAAA917CB3B /* Pods-ARGoogleMaps.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARGoogleMaps.debug.xcconfig"; path = "Target Support Files/Pods-ARGoogleMaps/Pods-ARGoogleMaps.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,17 +38,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C0B848E6DEC7A8B22F99A72 /* Pods_ARGoogleMaps.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		034245C77AFD3405CFCF219A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8E7DE846E0B9A6D65079CD22 /* Pods_ARGoogleMaps.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		3318540C2B866BCF009D6ECE = {
 			isa = PBXGroup;
 			children = (
 				331854172B866BCF009D6ECE /* ARGoogleMaps */,
 				331854162B866BCF009D6ECE /* Products */,
+				B2FD7216D25994794DAE2DE0 /* Pods */,
+				034245C77AFD3405CFCF219A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -72,6 +87,15 @@
 			path = ARGoogleMaps;
 			sourceTree = "<group>";
 		};
+		B2FD7216D25994794DAE2DE0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C2C11B70C38E1CAAA917CB3B /* Pods-ARGoogleMaps.debug.xcconfig */,
+				2323B5581DA131B4BDD9542F /* Pods-ARGoogleMaps.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -79,9 +103,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3318542C2B866BD0009D6ECE /* Build configuration list for PBXNativeTarget "ARGoogleMaps" */;
 			buildPhases = (
+				38BA13D451A982B5B75F5205 /* [CP] Check Pods Manifest.lock */,
 				331854112B866BCF009D6ECE /* Sources */,
 				331854122B866BCF009D6ECE /* Frameworks */,
 				331854132B866BCF009D6ECE /* Resources */,
+				EB513AFE2F1265213D5DD030 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -137,6 +163,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		38BA13D451A982B5B75F5205 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ARGoogleMaps-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EB513AFE2F1265213D5DD030 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ARGoogleMaps/Pods-ARGoogleMaps-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ARGoogleMaps/Pods-ARGoogleMaps-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ARGoogleMaps/Pods-ARGoogleMaps-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		331854112B866BCF009D6ECE /* Sources */ = {
@@ -293,13 +361,18 @@
 		};
 		3318542D2B866BD0009D6ECE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2C11B70C38E1CAAA917CB3B /* Pods-ARGoogleMaps.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 253SX8MAL3;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Please allow access to see your location.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -314,6 +387,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = mmaggiore.ARGoogleMaps;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -325,13 +399,18 @@
 		};
 		3318542E2B866BD0009D6ECE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2323B5581DA131B4BDD9542F /* Pods-ARGoogleMaps.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 253SX8MAL3;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Please allow access to see your location.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -346,6 +425,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = mmaggiore.ARGoogleMaps;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
