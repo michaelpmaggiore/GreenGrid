@@ -14,6 +14,7 @@
 		331854232B866BCF009D6ECE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 331854212B866BCF009D6ECE /* Main.storyboard */; };
 		331854252B866BD0009D6ECE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 331854242B866BD0009D6ECE /* Assets.xcassets */; };
 		331854282B866BD0009D6ECE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 331854262B866BD0009D6ECE /* LaunchScreen.storyboard */; };
+		335B4FB42B86ABAD008CFA86 /* HamburgerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335B4FB32B86ABAD008CFA86 /* HamburgerViewController.swift */; };
 		6C0B848E6DEC7A8B22F99A72 /* Pods_ARGoogleMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E7DE846E0B9A6D65079CD22 /* Pods_ARGoogleMaps.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +30,7 @@
 		331854242B866BD0009D6ECE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		331854272B866BD0009D6ECE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		331854292B866BD0009D6ECE /* ARGoogleMaps-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ARGoogleMaps-Bridging-Header.h"; sourceTree = "<group>"; };
+		335B4FB32B86ABAD008CFA86 /* HamburgerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HamburgerViewController.swift; sourceTree = "<group>"; };
 		8E7DE846E0B9A6D65079CD22 /* Pods_ARGoogleMaps.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ARGoogleMaps.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2C11B70C38E1CAAA917CB3B /* Pods-ARGoogleMaps.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARGoogleMaps.debug.xcconfig"; path = "Target Support Files/Pods-ARGoogleMaps/Pods-ARGoogleMaps.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -83,6 +85,7 @@
 				331854242B866BD0009D6ECE /* Assets.xcassets */,
 				331854262B866BD0009D6ECE /* LaunchScreen.storyboard */,
 				331854292B866BD0009D6ECE /* ARGoogleMaps-Bridging-Header.h */,
+				335B4FB32B86ABAD008CFA86 /* HamburgerViewController.swift */,
 			);
 			path = ARGoogleMaps;
 			sourceTree = "<group>";
@@ -214,6 +217,7 @@
 				3318541B2B866BCF009D6ECE /* Shaders.metal in Sources */,
 				3318541E2B866BCF009D6ECE /* Renderer.swift in Sources */,
 				331854202B866BCF009D6ECE /* ViewController.swift in Sources */,
+				335B4FB42B86ABAD008CFA86 /* HamburgerViewController.swift in Sources */,
 				331854192B866BCF009D6ECE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
