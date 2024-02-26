@@ -39,6 +39,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate, UITableViewDe
 //        self.mainBackView.layer.cornerRadius = 40
         self.mainBackView.layer.cornerRadius = 55
         self.mainBackView.clipsToBounds = true
+        self.view.sendSubviewToBack(self.mappingView)
+        self.view.bringSubviewToFront(self.mainBackView)
   }
   
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
@@ -348,4 +350,28 @@ class ViewController: UIViewController, CLLocationManagerDelegate, UITableViewDe
                 }
             }
         }
+    
+//    func mapView(_ mapView: GMSMapView, markerInfoContents marker: GMSMarker) -> UIView? {
+//      // 1
+//      guard let placeMarker = marker as? PlaceMarker else {
+//        return nil
+//      }
+//
+//      // 2
+//      guard let infoView = UIView.viewFromNibName("MarkerInfoView") as? MarkerInfoView else {
+//        return nil
+//      }
+//
+//      // 3
+//      infoView.nameLabel.text = placeMarker.place.name
+//
+//      // 4
+//      if let photo = placeMarker.place.photo {
+//        infoView.placePhoto.image = photo
+//      } else {
+//        infoView.placePhoto.image = UIImage(named: "generic")
+//      }
+//
+//      return infoView
+//    }
 }
