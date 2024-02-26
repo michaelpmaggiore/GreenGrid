@@ -61,70 +61,70 @@ class ViewController: UIViewController, CLLocationManagerDelegate, UITableViewDe
         let evMarker = GMSMarker()
         evMarker.position = CLLocationCoordinate2D(latitude: 39.75645, longitude: -105.22592)
         evMarker.title = "ChargePoint Charging Station"
-        evMarker.snippet = "EV Charger"
+        evMarker.snippet = "EV Charger\n2 Charging Ports\n6.48 kW per charger"
         evMarker.icon = GMSMarker.markerImage(with: .blue)
         evMarker.map = mapView
         
         let evMarker2 = GMSMarker()
         evMarker2.position = CLLocationCoordinate2D(latitude: 39.75695, longitude: -105.22339)
         evMarker2.title = "ChargePoint Charging Station"
-        evMarker2.snippet = "EV Charger"
+        evMarker2.snippet = "EV Charger\n2 Charging Ports\n6.48 kW per charger"
         evMarker2.icon = GMSMarker.markerImage(with: .blue)
         evMarker2.map = mapView
 
         let evMarker3 = GMSMarker()
         evMarker3.position = CLLocationCoordinate2D(latitude: 39.75599, longitude: -105.22298)
         evMarker3.title = "Tesla Destination Charger"
-        evMarker3.snippet = "EV Charger"
+        evMarker3.snippet = "EV Charger\n2 Charging Ports\n16 kW per charger"
         evMarker3.icon = GMSMarker.markerImage(with: .blue)
         evMarker3.map = mapView
 
         let evMarker4 = GMSMarker()
         evMarker4.position = CLLocationCoordinate2D(latitude: 39.754679, longitude: -105.221759)
         evMarker4.title = "Golden Stations Astor House"
-        evMarker4.snippet = "EV Charger"
+        evMarker4.snippet = "EV Charger\n2 Charging Ports"
         evMarker4.icon = GMSMarker.markerImage(with: .blue)
         evMarker4.map = mapView
 
         let evMarker5 = GMSMarker()
         evMarker5.position = CLLocationCoordinate2D(latitude: 39.75633, longitude: -105.22076)
         evMarker5.title = "ChargePoint Charging Station"
-        evMarker5.snippet = "EV Charger"
+        evMarker5.snippet = "EV Charger\n2 Charging Ports\n6.48 kW per charger"
         evMarker5.icon = GMSMarker.markerImage(with: .blue)
         evMarker5.map = mapView
 
         let evMarker6 = GMSMarker()
         evMarker6.position = CLLocationCoordinate2D(latitude: 39.75521, longitude: -105.22012)
         evMarker6.title = "ChargePoint Charging Station"
-        evMarker6.snippet = "EV Charger"
+        evMarker6.snippet = "EV Charger\n2 Charging Ports\n6.48 kW per charger"
         evMarker6.icon = GMSMarker.markerImage(with: .blue)
         evMarker6.map = mapView
 
         let evMarker7 = GMSMarker()
         evMarker7.position = CLLocationCoordinate2D(latitude: 39.75134, longitude: -105.22469)
         evMarker7.title = "ChargePoint Charging Station"
-        evMarker7.snippet = "EV Charger"
+        evMarker7.snippet = "EV Charger\n2 Charging Ports\n6.48 kW per charger"
         evMarker7.icon = GMSMarker.markerImage(with: .blue)
         evMarker7.map = mapView
 
         let evMarker8 = GMSMarker()
         evMarker8.position = CLLocationCoordinate2D(latitude: 39.75071, longitude: -105.21911)
         evMarker8.title = "ChargePoint Charging Station"
-        evMarker8.snippet = "EV Charger"
+        evMarker8.snippet = "EV Charger\n8 Charging Ports\n6.48 kW per charger"
         evMarker8.icon = GMSMarker.markerImage(with: .blue)
         evMarker8.map = mapView
 
         let evMarker9 = GMSMarker()
         evMarker9.position = CLLocationCoordinate2D(latitude: 39.75167, longitude: -105.21632)
         evMarker9.title = "EV Connect Charging Station"
-        evMarker9.snippet = "EV Charger"
+        evMarker9.snippet = "EV Charger\n6 Charging Ports\n7.2 kW per charger"
         evMarker9.icon = GMSMarker.markerImage(with: .blue)
         evMarker9.map = mapView
 
         let evMarker10 = GMSMarker()
         evMarker10.position = CLLocationCoordinate2D(latitude: 39.74624, longitude: -105.22113)
         evMarker10.title = "Garage I Lot F"
-        evMarker10.snippet = "EV Charger"
+        evMarker10.snippet = "EV Charger\n2 Charging Ports"
         evMarker10.icon = GMSMarker.markerImage(with: .blue)
         evMarker10.map = mapView
 
@@ -195,39 +195,40 @@ class ViewController: UIViewController, CLLocationManagerDelegate, UITableViewDe
         let gardenMarker = GMSMarker()
         gardenMarker.position = CLLocationCoordinate2D(latitude: 39.75421, longitude: -105.23333)
         gardenMarker.title = "Golden Community Garden"
-        gardenMarker.snippet = "Photosynthesizer"
+        gardenMarker.snippet = "Photosynthesizer\n"
         gardenMarker.icon = GMSMarker.markerImage(with: .systemPink)
         gardenMarker.map = mapView
         
         let gardenMarker2 = GMSMarker()
         gardenMarker2.position = CLLocationCoordinate2D(latitude: 39.76165, longitude: -105.23194)
         gardenMarker2.title = "Mitchell Elementary School Garden"
-        gardenMarker2.snippet = "Photosynthesizer"
+        gardenMarker2.snippet = "Photosynthesizer\nPlants are responsible for absorbing between a quarter to a third of all\nhuman-caused carbon emissions per year."
         gardenMarker2.icon = GMSMarker.markerImage(with: .systemPink)
         gardenMarker2.map = mapView
         
         let orecartMarker = GMSMarker()
         orecartMarker.position = CLLocationCoordinate2D(latitude: 39.75018, longitude: -105.21937)
         orecartMarker.title = "Orecart Tungsten Route"
-        orecartMarker.snippet = "Transportation"
+        // (350g of CO2 per mile driven in a car on average) * (~4 miles roundtrip on a drive to campus for a student within Orecart range) * (5 days per week) * (32 weeks of school per year) = ~224000 grams of carbon offset taking the Orecart
+        orecartMarker.snippet = "Transportation\nOn average, a student will reduce their carbon emissions by 224,000g per year\nby riding the Orecart to campus during the school year."
         orecartMarker.map = mapView
         
         let orecartMarker2 = GMSMarker()
         orecartMarker2.position = CLLocationCoordinate2D(latitude: 39.75092, longitude: -105.22318)
         orecartMarker2.title = "Orecart Silver Route"
-        orecartMarker2.snippet = "Transportation"
+        orecartMarker2.snippet = "Transportation\nOn average, a student will reduce their carbon emissions by 224,000g per year\nby riding the Orecart to campus during the school year."
         orecartMarker2.map = mapView
         
         let orecartMarker3 = GMSMarker()
         orecartMarker3.position = CLLocationCoordinate2D(latitude: 39.75228, longitude: -105.22478)
         orecartMarker3.title = "Orecart Gold Route"
-        orecartMarker3.snippet = "Transportation"
+        orecartMarker3.snippet = "Transportation\nOn average, a student will reduce their carbon emissions by 224,000g per year\nby riding the Orecart to campus during the school year."
         orecartMarker3.map = mapView
         
         let orecartMarker0 = GMSMarker()
         orecartMarker0.position = CLLocationCoordinate2D(latitude: 39.75786, longitude: -105.22266)
         orecartMarker0.title = "RTD Bus Station"
-        orecartMarker0.snippet = "Transportation"
+        orecartMarker0.snippet = "Transportation\nUsing public transit creates 84% less carbon emissions than driving a car"
         orecartMarker0.map = mapView
     }
     
